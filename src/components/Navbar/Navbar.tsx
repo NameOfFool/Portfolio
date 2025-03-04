@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import styles from './Navbar.module.css'
+import styles from './Navbar.module.scss'   
 import { GoPerson, GoHome } from 'react-icons/go';
 
 export default function Navbar() {

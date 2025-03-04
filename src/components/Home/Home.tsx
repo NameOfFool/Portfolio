@@ -1,5 +1,5 @@
 import programmer from '../../assets/programmer.png'
-import styles from './Home.module.css'
+import styles from './Home.module.scss'
 
 export default function Home() {
     return (
