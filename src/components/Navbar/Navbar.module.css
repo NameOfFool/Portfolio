@@ -1,0 +1,60 @@
+@import "../../vars.css";
+
+.navbar {
+    background-color: var(--color-dark);
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.menu {
+    display: flex;
+    gap: 47px;
+    list-style: none;
+    font-family: Roboto, sans-serif;
+}
+.menu a {
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    padding:5px 0;
+    position: relative;
+}
+
+a.active {
+    color: var(--color-active);
+}
+.menu a::after{
+    background-color: var(--color-text);
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    border-radius: 5px;
+    position: absolute;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+a.active::after {
+    background-color: var(--color-active);
+}
+.menu a:hover::after{ 
+    width: 100%; 
+    left: 0; 
+  }

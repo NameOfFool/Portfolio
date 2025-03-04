@@ -1,0 +1,19 @@
+@import './vars.css';
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--color-text);
+  font-family: var(--font-roboto);
+  background-color: var(--color-bg);
+}
+#root {
+  height: 100vh;
+}
+@font-face {
+  font-family: 'Rubick-Black';
+  src: local('Rubick-Black'),
+    url('./fonts/Rubic/Rubik-Black.ttf') format('truetype');
+  font-weight:normal;
+}
