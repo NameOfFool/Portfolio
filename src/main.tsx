@@ -7,8 +7,6 @@ import About from './components/About/About.tsx'
 import Contacts from './components/Contacts/Contacts.tsx'
 import Projects from './components/Projects/Projects.tsx'
 
-import './fonts/Rubic/Rubik-Black.ttf';
-
 createRoot(document.getElementById('root')!).render(
   <BrowserRouter>
     <Routes>

@@ -163,6 +163,11 @@
     "@babel/helper-string-parser" "^7.25.9"
     "@babel/helper-validator-identifier" "^7.25.9"
 
+"@devicon/react@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@devicon/react/-/react-0.0.3.tgz#9142cc878dff9a6f988e6db44894e0f42b3bc241"
+  integrity sha512-r8Td7z0hyC8Y1PSgZs9NBGDcEosmFjSLWlhbez/8nOR+5HNXFpaFryc7OkKk6F2J+WXEpyxKx81CjXcCW3qO7A==
+
 "@esbuild/aix-ppc64@0.25.0":
   version "0.25.0"
   resolved "https://registry.yarnpkg.com/@esbuild/aix-ppc64/-/aix-ppc64-0.25.0.tgz#499600c5e1757a524990d5d92601f0ac3ce87f64"

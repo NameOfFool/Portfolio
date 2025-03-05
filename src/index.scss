@@ -1,4 +1,5 @@
 @use './vars';
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   box-sizing: border-box;
@@ -8,12 +9,25 @@
   font-family: vars.$font-roboto;
   background-color: vars.$color-bg;
 }
+
 #root {
   height: 200vh;
 }
+
 @font-face {
-  font-family: 'Rubick-Black';
-  src: local('Rubick-Black'),
-    url('./fonts/Rubic/Rubik-Black.ttf') format('truetype');
-  font-weight:normal;
+  font-family: 'Rubik';
+  src: local('Rubik'),
+    url('./fonts/Rubik/Rubik-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: local('Rubik'),
+    url('./fonts/Rubik/Rubik-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+main {
+  margin-top: vars.$spacing-lg;
 }

@@ -1,0 +1,34 @@
+@use '../../vars';
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 75%;
+
+    &_text {
+        font-family: "Rubik";
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: normal;
+        &_header {
+            font-weight: bold;
+            font-size: 48px;
+
+            &_active {
+                color: vars.$color-active;
+            }
+        }
+    }
+
+    &_skills {
+        display:flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        gap:vars.$spacing-sm;
+        @include vars.breakpoint(md) {
+            gap:vars.$spacing-lg;
+        }
+    }
+}
