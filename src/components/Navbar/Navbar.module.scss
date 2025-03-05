@@ -10,21 +10,19 @@
     &__content {
         max-width: 1920px;
         margin: 0 auto;
-        padding: 0 vars.$spacing-md;
-        justify-content: space-around;
+        justify-content: space-between;
+        padding: 0 vars.$spacing-sm;
         align-items: center;
         display: flex;
+        flex-flow: row nowrap;
         height: 100%;
         transition: 0.3s ease padding;
 
         @include vars.breakpoint(md) {
             padding: 0 vars.$spacing-lg;
+            
         }
 
-        &>div {
-            flex: 1;
-            white-space: nowrap;
-        }
     }
 }
 
@@ -44,18 +42,21 @@
     gap: vars.$spacing-lg;
     margin: 0;
     flex-flow: column nowrap;
-    justify-content: center;
-    top:0;
+    justify-content: start;
+    top:vars.$navbar-height;
     align-items: center;
-    position: fixed;
-    right: -100%;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+    width:0;
+    height:calc(100vh - vars.$navbar-height);
     background-color: vars.$color-dark;
     padding:vars.$spacing-md 0;
     font-family: Roboto, sans-serif;
+    transition: all 0.2s ease-in;
 
-    &__open {
-        transition: 0.2s ease right;
-        right:0;
+    &__open {        
+        width:270px;
     }
 
     &__item {
@@ -65,9 +66,9 @@
         letter-spacing: 0.1em;
         display: inline-block;
         padding:5px 0;
+        margin: vars.$spacing-sm 0;
         position: relative;
         color:inherit;
-        height:100%;
 
         transition: 0.3s ease color;
 
@@ -79,7 +80,7 @@
             background-color: vars.$color-text;
             content: "";
             display: block;
-            bottom: -2px;
+            bottom: -5px;
             height: 3px;
             left: 50%;
             border-radius: 5px;
@@ -98,11 +99,12 @@
         }
     }
     @include vars.breakpoint(md) {
-        position: static;
         display: flex;
-        flex-direction: row;
+        flex-flow: row;
         background: initial;
         width: auto;
+        height:auto;
+        position:static;
         padding: 0;
 
         &__item {
@@ -147,24 +149,22 @@
 
  
 
-    button {
-        font-weight: 500;
-        color: vars.$color-text;
-        border: 2px solid vars.$color-dark;
-        padding: vars.$spacing-sm vars.$spacing-lg;
-        border-radius: calc(vars.$spacing-sm / 2);
-        cursor: pointer;
-        background-color: vars.$color-dark;
+}
+button {
+    font-weight: 500;
+    color: vars.$color-text;
+    border: none;
+    cursor: pointer;
+    background-color: vars.$color-dark;
 
-        box-shadow: 0 0 0.5em 0 vars.$color-dark;
+    box-shadow: 0 0 0.5em 0 vars.$color-dark;
 
-        &.active {
-            transition: scale(0.98);
-            border-radius: 0;
-        }
+    &.active {
+        transition: scale(0.98);
+        border-radius: 0;
+    }
 
-        &:hover {
-            box-shadow: 0 0 0.75em 0 vars.$color-dark;
-        }
+    &:hover {
+        box-shadow: 0 0 0.75em 0 vars.$color-dark;
     }
 }
