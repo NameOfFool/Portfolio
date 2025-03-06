@@ -3,7 +3,7 @@
 .container {
     display: flex;
     flex-flow: column nowrap;
-    width: 75%;
+    gap:vars.$spacing-lg;    
 
     &_text {
         font-family: "Rubik";
@@ -15,7 +15,7 @@
         &_header {
             font-weight: bold;
             font-size: 48px;
-
+            margin: 0;
             &_active {
                 color: vars.$color-active;
             }

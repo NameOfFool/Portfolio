@@ -4,6 +4,7 @@
     background-color: vars.$color-dark;
     position: relative;
     height: vars.$navbar-height;
+    min-height: vars.$navbar-height;
     width: 100vw;
     box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2);
 

@@ -1,0 +1,13 @@
+@use '../../vars';
+
+.footer{
+    background-color: #00000055;
+    text-align: center;
+    height: vars.$footer-height;
+    min-height: vars.$footer-height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+}
