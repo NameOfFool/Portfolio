@@ -1,7 +1,7 @@
 import styles from './About.module.scss'
 import { CsharpPlainIcon, NodejsPlainWordmarkIcon, ReactOriginalIcon, MysqlPlainWordmarkIcon } from '@devicon/react'
 import { CgCPlusPlus } from 'react-icons/cg'
-import { DiJava, DiJavascript, DiRust } from 'react-icons/di'
+import { DiJava, DiRust } from 'react-icons/di'
 import { SiJavascript } from 'react-icons/si'
 import { TbSql } from 'react-icons/tb'
 

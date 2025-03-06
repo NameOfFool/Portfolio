@@ -6,6 +6,7 @@
     height: vars.$navbar-height;
     min-height: vars.$navbar-height;
     width: 100vw;
+    z-index: 1000;
     box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.2);
 
     &__content {
@@ -57,7 +58,7 @@
     transition: all 0.2s ease-in;
 
     &__open {        
-        width:270px;
+        width:100%;
     }
 
     &__item {

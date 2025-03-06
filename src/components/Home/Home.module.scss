@@ -1,11 +1,16 @@
 @use '../../vars';
 
 .container {
-    display: flex;
-    width: 75%;
-    justify-content: space-around;
-    align-items: center;
-    flex-flow: row wrap;
+    justify-content: center;
+    display:flex;
+    &_introducing {
+        display: flex;
+        
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;        
+        flex-flow: row wrap;
+    }
 
     @include vars.breakpoint(md) {
         flex-wrap: nowrap;
@@ -16,11 +21,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     font-family: "Rubik";
-    font-size:32px;
+    font-size: 32px;
 }
 
 .programmer {
-    max-height: 450px;
     max-width: 100%;
+    padding-top: 25px;
+    min-width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    border: 5px solid vars.$color-active;
 }
