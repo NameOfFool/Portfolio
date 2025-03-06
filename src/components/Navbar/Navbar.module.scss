@@ -112,7 +112,8 @@
             padding: 0 vars.$spacing-lg;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
+            gap:vars.$spacing-usm;
         }
 
         &__button_container {

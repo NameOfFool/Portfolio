@@ -22,9 +22,6 @@ export default function Navbar() {
                     <NavLink className={({ isActive }) => isActive ? styles.active + " " + styles.menu__item : styles.menu__item} to="/projects">
                         <GoProject className={styles.navIcon} /> Projets
                     </NavLink>
-                    <NavLink className={({ isActive }) => isActive ? styles.active + " " + styles.menu__item : styles.menu__item} to="/contacts">
-                        <GoChecklist className={styles.navIcon} /> Contacts
-                    </NavLink>
                 </div>
                 <button className={styles.menu__toggler} onClick={menuToggle}>
                     {!menuOpen ? <BiMenuAltRight /> : <AiOutlineCloseSquare />}
