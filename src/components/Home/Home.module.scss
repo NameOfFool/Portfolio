@@ -1,6 +1,6 @@
 @use '../../vars';
 
-.home_container {
+.container {
     display: flex;
     width: 75%;
     justify-content: space-around;
@@ -17,6 +17,7 @@
     flex-direction: column;
     align-items: center;
     font-family: "Rubik";
+    font-size:32px;
 }
 
 .programmer {

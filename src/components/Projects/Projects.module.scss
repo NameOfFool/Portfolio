@@ -4,7 +4,6 @@
     display: flex;
     flex-flow: column nowrap;
     width: 75%;
-    gap:vars.$spacing-md;
 
     &_text {
         font-family: "Rubik";
@@ -28,15 +27,6 @@
         justify-content: center;
         flex-flow: row wrap;
         gap:vars.$spacing-sm;
-        &_item{
-            border: 2px solid vars.$color-active;
-            border-radius: 5px;
-            padding: vars.$spacing-md vars.$spacing-lg;
-            transition: all 0.4s ease 0s !important;
-            &:hover{
-                transform: scale(1.1);                
-            }
-        }
         @include vars.breakpoint(md) {
             gap:vars.$spacing-lg;
         }
