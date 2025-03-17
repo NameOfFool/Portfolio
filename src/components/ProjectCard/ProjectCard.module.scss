@@ -1,0 +1,28 @@
+@use '../../vars';
+.container{
+    display:flex;
+    font-family: 'Rubik';
+    font-size: 16px;
+    color:vars.$color-text;
+    text-decoration: none;
+    flex-flow: column nowrap;
+    background-color: vars.$color-active;
+    border-radius: vars.$spacing-sm;
+    width: vars.$usm;
+    padding:vars.$spacing-sm;
+    transition: all 0.4s ease 0s !important;
+    &:hover{
+        transform: scale(1.1);                
+    }
+    &__title{
+        text-align: center;
+        margin: 0;
+    }
+    &__image{
+        margin: vars.$spacing-md 0;
+        
+    }
+    &__content{
+
+    }
+}

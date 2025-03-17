@@ -31,4 +31,8 @@
             gap:vars.$spacing-lg;
         }
     }
+    &_projects{
+        display: flex;
+        width: 100%;
+    }
 }
