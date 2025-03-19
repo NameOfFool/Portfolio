@@ -1,4 +1,4 @@
-import ProjectCard from '../ProjectCard/ProjectCard'
+import ProjectCard from '../../components/ProjectCard/ProjectCard'
 import styles from './Projects.module.scss'
 import therapistImage from '../../assets/Projects/therapist.gif'
 
