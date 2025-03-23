@@ -3,6 +3,7 @@
 .container {
     display: flex;
     flex-flow: column nowrap;
+    text-align: center;
     width: 75%;
 
     &_text {
