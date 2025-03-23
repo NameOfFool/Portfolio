@@ -1,0 +1,22 @@
+{
+    "navbar":{
+        "home":"Главная",
+        "about":"О себе",
+        "projects":"Проекты"
+    },
+    "home":{
+        "welcome":"Добро пожаловать на мой сайт-портфолио!",
+        "introducing":"Я Иван Тихонов",
+        "profession":"Full stack разработчик"
+    },
+    "about":{
+        "overview":"Обзор",
+        "mySkills":"моих навыков",
+        "annotation":"Мои навыки к вашим услугам"
+    },
+    "projects":{
+        "my":"Мои",
+        "petProjects":"Пет проекты",
+        "therapitsDescription":"Системный монитор, который также отправляет данные на COM-порт"
+    }
+}

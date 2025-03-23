@@ -1,0 +1,22 @@
+export default interface TranslationsTypes{
+    navbar:{
+        home:string;
+        about:string;
+        projects:string;
+    };
+    home:{
+        welcome:string;
+        introducing:string;
+        profession:string;
+    };
+    about:{
+        overview:string;
+        mySkills:string;
+        annotation:string;
+    };
+    projects:{
+        my:string;
+        petProjects:string;
+        therapitsDescription:string;
+    };
+}

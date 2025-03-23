@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import styles from './About.module.scss'
 import { CsharpPlainIcon, NodejsPlainWordmarkIcon, ReactOriginalIcon, MysqlPlainWordmarkIcon } from '@devicon/react'
 import { CgCPlusPlus } from 'react-icons/cg'
@@ -6,11 +7,12 @@ import { SiJavascript } from 'react-icons/si'
 import { TbSql } from 'react-icons/tb'
 
 export default function About() {
+    const {t} = useTranslation()
     return (
         <main className={styles.container}>
             <div className={styles.container_text}>
-                <p className={styles.container_text_header}>My Skills <span className={styles.container_text_header_active}>Overview</span></p>
-                <span>My full-stack skills at your service</span>
+                <p className={styles.container_text_header}><span className={styles.container_text_header_active}>{t("about.overview")}</span> {t("about.mySkills")} </p>
+                <span>{t("about.annotation")}</span>
             </div>
             <div className={styles.container_skills}>
                 <div className={styles.container_skills_item}>

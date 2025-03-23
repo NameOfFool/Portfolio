@@ -1,0 +1,22 @@
+{
+    "navbar":{
+        "home":"Home",
+        "about":"About",
+        "projects":"Projects"
+    },
+    "home":{
+        "welcome":"Welcome to my portfolio site!",
+        "introducing":"I’m Ivan Tikhonov",
+        "profession":"Full stack developer"
+    },
+    "about":{
+        "overview":"Overview",
+        "mySkills":"of my skills",
+        "annotation":"My skills at your service"
+    },
+    "projects":{
+        "my":"My",
+        "petProjects":"Pet Projects",
+        "therapitsDescription":"A system monitor that also sends data to a COM port"
+    }
+}
